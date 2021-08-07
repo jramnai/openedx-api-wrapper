@@ -48,6 +48,7 @@ client.user.get_username()
 # Available methods
 - client.user.get_username()
 - client.user.get_user_details(username)
+- client.user.registration({"name":"john", "username":"johnd", "email":"john.doe@example.com", "password":"edx", "country":"IN", "honor_code":True})
 
 # Future Work
 - Publish on [PyPI](https://pypi.org/)

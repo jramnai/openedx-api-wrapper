@@ -29,3 +29,9 @@ class UserComponent(base.BaseComponent):
         Get a user's profile.
         """
         return self.call_lms('get', f'/api/user/v1/accounts/{username}')
+
+    def registration(self, data):
+        """
+        User registration
+        """
+        return self.call_lms('post', '/api/user/v1/account/registration/', data=data)
